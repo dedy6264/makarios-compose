@@ -36,3 +36,6 @@ services:
 networks:
   sample-service-network:
     driver: bridge
+    ipam:
+      config:
+        - subnet: 172.17.0.0/16
